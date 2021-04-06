@@ -20,7 +20,7 @@ app.use(express.json());
 
 //routes-------------------------------
 app.get('/',(req,res)=>{
-    res.send('Making a commit with codepipeline')
+    res.send('Making a second commit with codepipeline')
 })
 
 app.use("/api", routes);
