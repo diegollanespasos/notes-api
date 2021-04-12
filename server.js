@@ -22,7 +22,7 @@ app.use(cors());
 
 //routes-------------------------------
 app.get('/',(req,res)=>{
-    res.send('Making a second commit with codepipeline')
+    res.send("Testing codeDeploy");
 })
 
 app.use("/api", routes);
