@@ -2,6 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const myconn =  require("express-myconnection");
 const routes = require("./routes");
+const cors = require('cors');
 
 const app = express();
 app.set('port', process.env.PORT||8080);
@@ -17,6 +18,7 @@ const dbOptions = {
 //middlewares
 app.use(myconn(mysql, dbOptions, 'single'));
 app.use(express.json());
+app.use(cors());
 
 //routes-------------------------------
 app.get('/',(req,res)=>{
