@@ -18,7 +18,7 @@ const dbOptions = {
 //middlewares
 app.use(myconn(mysql, dbOptions, 'single'));
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
 
 //routes-------------------------------
 app.get('/',(req,res)=>{
