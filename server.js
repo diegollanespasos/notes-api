@@ -22,7 +22,7 @@ app.use(express.json());
 
 //routes-------------------------------
 app.get('/',(req,res)=>{
-    res.send("Testing codeDeploy");
+    res.send("Testing codeDeploy and codepipeline");
 })
 
 app.use("/api", routes);
