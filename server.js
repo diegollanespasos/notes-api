@@ -11,7 +11,7 @@ const dbOptions = {
     host: 'notes-app-database.cbafskpwyok4.us-east-2.rds.amazonaws.com',
     port: 3306,
     user: 'admin',
-    password: 'notesapp*',
+    password: 'databaseDiego',
     database: 'notes_schema'
 }
 
