@@ -22,7 +22,7 @@ app.use(cors());
 
 //routes-------------------------------
 app.get('/',(req,res)=>{
-    res.send("This is home");
+    res.send("This is home page");
 })
 
 app.use("/api", routes);
